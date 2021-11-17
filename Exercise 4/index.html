@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(15, 15, 15);
+            color:  wheat;
+        }
+    </style>
+    <script>
+        let rest = 0; 
+        do{
+        const dni = prompt("D.N.I.");
+
+        if (dni > 99999999){
+            alert("Enter your D.N.I. again");
+        }
+        else if (dni == NaN){
+            alert("You didn´t enter a number");
+        }
+
+        rest = dni % 23;
+
+        switch (rest){
+            case 0: word = "T"; break;
+            case 1: word = "R"; break;
+            case 2: word = "W"; break;
+            case 3: word = "A"; break;
+            case 4: word = "G"; break;
+            case 5: word = "M"; break;
+            case 6: word = "Y"; break;
+            case 7: word = "F"; break;
+            case 8: word = "P"; break;
+            case 9: word = "D"; break;
+            case 10: word = "X"; break;
+            case 11: word = "B"; break;
+            case 12: word = "N"; break;
+            case 13: word = "J"; break;
+            case 14: word = "Z"; break;
+            case 15: word = "S"; break;
+            case 16: word = "Q"; break;
+            case 17: word = "V"; break;
+            case 18: word = "H"; break;
+            case 19: word = "L"; break;
+            case 20: word = "C"; break;
+            case 21: word = "K"; break;
+            case 22: word = "E"; break;    
+            default: alert("You didn´t enter numbers");
+        }
+        
+        alert(word);
+
+    } while (confirm("Do you want to continue?"));
+    </script>
+</body>
+</html>
